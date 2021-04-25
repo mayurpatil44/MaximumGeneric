@@ -2,22 +2,20 @@ package com.Generic;
 
 public class FindMaximum {
 
-    public double firstFloat = 0;
-    public double secondFloat = 0;
-    public double thirdFloat = 0;
+    public String firstString;
+    public String secondString;
+    public String thirdString;
 
-    public double MaximumFloatNum(double firstFloat, double secondFloat, double thirdFloat) {
-
-        if(Double.compare(firstFloat,secondFloat)> 0){
-            return firstFloat;
+    public String MaximumString(String firstString,String secondString,String thirdString) {
+        if(firstString.compareTo(secondString) > 0){
+            return firstString;
         }
-        else if(Double.compare(secondFloat,thirdFloat) > 0) {
-            return secondFloat;
+        else if(secondString.compareTo(thirdString) > 0){
+            return secondString;
         }
         else{
-            return thirdFloat;
+            return thirdString;
         }
 
     }
-
 }
