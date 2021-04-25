@@ -26,31 +26,4 @@ public class FindMaximumValue {
         Assert.assertSame(77, maxValue);
     }
 
-    @Test
-    public void givenThreeFloats_WhenFirstPositionIsMax_ShouldReturnSameNumber() {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maxValue = findMaximum.MaximumFloatNum(3.3, 2.2, 1.1);
-        Assert.assertEquals((Double) 3.3, maxValue);
-    }
-    @Test
-    public void givenThreeFloats_WhenSecondPositionIsMax_ShouldReturnSameNumber()
-    {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maxValue = findMaximum.MaximumFloatNum(2.2,3.3, 1.1);
-        Assert.assertEquals((Double) 3.3,maxValue);
-    }
-    @Test
-    public void givenThreeFloats_WhenThirdPositionIsMax_ShouldReturnSameNumber()
-    {
-        FindMaximum findMaximum = new FindMaximum();
-        Double maxValue =  findMaximum.MaximumFloatNum(1.1,2.2, 3.3);
-        Assert.assertEquals((Double) 3.3,maxValue);
-    }
-    @Test
-    public void givenThreeStrings_WhenFirstPositionIsMax_ShouldReturnSameNumber()
-    {
-        FindMaximum findMaximum = new FindMaximum();
-        String maxValue = findMaximum.MaximumString("Sandip","Mayur","Patil");
-        Assert.assertEquals("Sandip",maxValue);
-    }
 }
