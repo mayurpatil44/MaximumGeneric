@@ -17,4 +17,10 @@ public class FindMaximumValue {
         Integer maxValue = findMaximum.MaximumNumber(44,77,50);
         Assert.assertSame(77,maxValue);
     }
+    @Test
+    public void givenThreeIntegers_WhenThirdPositionIsMax_ShouldReturnSameNumber(){
+        FindMaximum findMaximum = new FindMaximum();
+        Integer maxValue = findMaximum.MaximumNumber(50,44 ,77);
+        Assert.assertSame(77,maxValue);
+    }
 }
