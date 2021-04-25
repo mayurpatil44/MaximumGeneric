@@ -5,6 +5,9 @@ public class FindMaximum {
     public Integer firstNumber = 0;
     public Integer secondNumber = 0;
     public Integer thirdNumber = 0;
+    public double firstFloat = 0;
+    public double secondFloat = 0;
+    public double thirdFloat = 0;
 
     public Integer MaximumNumber(Integer firstNumber,Integer secondNumber,Integer thirdNumber) {
         if(firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0){
