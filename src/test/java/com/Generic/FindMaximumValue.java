@@ -23,4 +23,11 @@ public class FindMaximumValue {
         Integer maxValue = findMaximum.MaximumNumber(50,44 ,77);
         Assert.assertSame(77,maxValue);
     }
+    @Test
+    public void givenThreeFloats_WhenFirstPositionIsMax_ShouldReturnSameNumber()
+    {
+        FindMaximum findMaximum = new FindMaximum();
+        Double maxValue =  findMaximum.MaximumFloatNum(3.3,2.2, 1.1);
+        Assert.assertEquals((Double) 3.3,maxValue);
+    }
 }
